@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>Score Keeper</title>
+</head>
+<body>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-half is-offset-one-quarter">
+                <div class="card">
+                    <div class="card-image">
+                      <figure class="image is-2by1">
+                        <img src="https://images.unsplash.com/photo-1624936188350-883a61a44116?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="Placeholder image">
+                      </figure>
+                    </div>
+                    <div class="card-header">
+                        <p class="card-header-title is-centered is-size-3">
+                            Score Keeper
+                        </p>
+                    </div>
+                    <div class="card-content">
+                      <div class="content has-text-centered">
+                        <h1><span id = "p1DisplayScore">0</span> to <span id="p2DisplayScore">0</span></h1>
+                        <p class="subtitles">Use the buttons to keep the scores</p>
+                        <div class="select">
+                            <select name="" id="playto">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                            </select>
+                        </div>
+                        <div class="columns">
+                            <div class="column is-10
+                            is-offset-3
+                            ">
+                            <div class="buttons are-small has-text-centered">
+                                <button id="p1Button" class="button is-primary">+1 Player One</button>
+                                <button id="p2Button" class="button is-info">+1 Player Two</button>
+                                <button id="reset" class="button is-danger">Reset</button>
+                            </div>
+                            </div>
+                        </div>
+                       
+                       
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+    
+</body>
+</html>
